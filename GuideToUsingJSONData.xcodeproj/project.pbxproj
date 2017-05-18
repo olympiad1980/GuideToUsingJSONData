@@ -13,6 +13,7 @@
 		84ABFBA31ECDB0EE000E86DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFBA21ECDB0EE000E86DF /* Assets.xcassets */; };
 		84ABFBA61ECDB0EE000E86DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFBA41ECDB0EE000E86DF /* LaunchScreen.storyboard */; };
 		84ABFBB11ECDB165000E86DF /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABFBB01ECDB165000E86DF /* NetworkModel.swift */; };
+		BC97484DC0FCB32A72E791E8 /* Pods_GuideToUsingJSONData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD972EF0772A11073ECE105 /* Pods_GuideToUsingJSONData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		84ABFBA51ECDB0EE000E86DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84ABFBA71ECDB0EE000E86DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84ABFBB01ECDB165000E86DF /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		9491B341AD9AB4F6B3EC75E1 /* Pods-GuideToUsingJSONData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuideToUsingJSONData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuideToUsingJSONData/Pods-GuideToUsingJSONData.debug.xcconfig"; sourceTree = "<group>"; };
+		DCD972EF0772A11073ECE105 /* Pods_GuideToUsingJSONData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuideToUsingJSONData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC090E85285D881BF856C9DE /* Pods-GuideToUsingJSONData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuideToUsingJSONData.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuideToUsingJSONData/Pods-GuideToUsingJSONData.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC97484DC0FCB32A72E791E8 /* Pods_GuideToUsingJSONData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0B653F432C5F72BE5D83F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9491B341AD9AB4F6B3EC75E1 /* Pods-GuideToUsingJSONData.debug.xcconfig */,
+				FC090E85285D881BF856C9DE /* Pods-GuideToUsingJSONData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84ABFB8F1ECDB0EE000E86DF = {
 			isa = PBXGroup;
 			children = (
 				84ABFB9A1ECDB0EE000E86DF /* GuideToUsingJSONData */,
 				84ABFB991ECDB0EE000E86DF /* Products */,
+				1F0B653F432C5F72BE5D83F7 /* Pods */,
+				E5401583C3133BFD57930579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,14 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		E5401583C3133BFD57930579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972EF0772A11073ECE105 /* Pods_GuideToUsingJSONData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84ABFBAA1ECDB0EE000E86DF /* Build configuration list for PBXNativeTarget "GuideToUsingJSONData" */;
 			buildPhases = (
+				43BA0A205C92DAD075E8E8C2 /* [CP] Check Pods Manifest.lock */,
 				84ABFB941ECDB0EE000E86DF /* Sources */,
 				84ABFB951ECDB0EE000E86DF /* Frameworks */,
 				84ABFB961ECDB0EE000E86DF /* Resources */,
+				FBACA641C7ACA4DAD996D295 /* [CP] Embed Pods Frameworks */,
+				37DC630C84DDF0E41C89D78F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37DC630C84DDF0E41C89D78F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuideToUsingJSONData/Pods-GuideToUsingJSONData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43BA0A205C92DAD075E8E8C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBACA641C7ACA4DAD996D295 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuideToUsingJSONData/Pods-GuideToUsingJSONData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84ABFB941ECDB0EE000E86DF /* Sources */ = {
@@ -278,6 +353,7 @@
 		};
 		84ABFBAB1ECDB0EE000E86DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9491B341AD9AB4F6B3EC75E1 /* Pods-GuideToUsingJSONData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GuideToUsingJSONData/Info.plist;
@@ -290,6 +366,7 @@
 		};
 		84ABFBAC1ECDB0EE000E86DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC090E85285D881BF856C9DE /* Pods-GuideToUsingJSONData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GuideToUsingJSONData/Info.plist;

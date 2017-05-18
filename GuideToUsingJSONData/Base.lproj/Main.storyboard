@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeX-n6-p5U">
+                                <rect key="frame" x="0.0" y="143" width="375" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="P68-IC-8tY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIp-xv-4S4">
+                                <rect key="frame" x="43" y="393" width="289" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="FC5-Sc-RwZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVA-Hr-Pya">
+                                <rect key="frame" x="289.5" y="82" width="44.5" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="GAi-ET-U2E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vIp-xv-4S4" secondAttribute="trailing" constant="27" id="G8Y-gi-djp"/>
+                            <constraint firstItem="vIp-xv-4S4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="Y9g-rY-311"/>
+                            <constraint firstItem="QeX-n6-p5U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="g0i-HD-wHV"/>
+                            <constraint firstItem="vIp-xv-4S4" firstAttribute="top" secondItem="QeX-n6-p5U" secondAttribute="bottom" constant="20" id="izn-Jf-hHG"/>
+                            <constraint firstItem="QeX-n6-p5U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="keU-cq-spC"/>
+                            <constraint firstItem="QeX-n6-p5U" firstAttribute="top" secondItem="XVA-Hr-Pya" secondAttribute="bottom" constant="18" id="oIR-Cg-2YN"/>
+                            <constraint firstAttribute="trailing" secondItem="QeX-n6-p5U" secondAttribute="trailing" id="rH2-55-8a3"/>
+                            <constraint firstItem="XVA-Hr-Pya" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="rmd-2B-j8O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVA-Hr-Pya" secondAttribute="trailing" constant="25" id="wBg-SI-HYs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="author" destination="XVA-Hr-Pya" id="g9c-6D-V1a"/>
+                        <outlet property="titleLabel" destination="vIp-xv-4S4" id="BrE-bx-cKq"/>
+                        <outlet property="urlImage" destination="QeX-n6-p5U" id="D71-Gf-NiI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
