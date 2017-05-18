@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		84ABFB9C1ECDB0EE000E86DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABFB9B1ECDB0EE000E86DF /* AppDelegate.swift */; };
-		84ABFB9E1ECDB0EE000E86DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABFB9D1ECDB0EE000E86DF /* ViewController.swift */; };
+		84ABFB9E1ECDB0EE000E86DF /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABFB9D1ECDB0EE000E86DF /* StartVC.swift */; };
 		84ABFBA11ECDB0EE000E86DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFB9F1ECDB0EE000E86DF /* Main.storyboard */; };
 		84ABFBA31ECDB0EE000E86DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFBA21ECDB0EE000E86DF /* Assets.xcassets */; };
 		84ABFBA61ECDB0EE000E86DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFBA41ECDB0EE000E86DF /* LaunchScreen.storyboard */; };
+		84ABFBB11ECDB165000E86DF /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABFBB01ECDB165000E86DF /* NetworkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84ABFB981ECDB0EE000E86DF /* GuideToUsingJSONData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideToUsingJSONData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ABFB9B1ECDB0EE000E86DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84ABFB9D1ECDB0EE000E86DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84ABFB9D1ECDB0EE000E86DF /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		84ABFBA01ECDB0EE000E86DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84ABFBA21ECDB0EE000E86DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84ABFBA51ECDB0EE000E86DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84ABFBA71ECDB0EE000E86DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ABFBB01ECDB165000E86DF /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		84ABFB9A1ECDB0EE000E86DF /* GuideToUsingJSONData */ = {
 			isa = PBXGroup;
 			children = (
-				84ABFB9B1ECDB0EE000E86DF /* AppDelegate.swift */,
-				84ABFB9D1ECDB0EE000E86DF /* ViewController.swift */,
 				84ABFB9F1ECDB0EE000E86DF /* Main.storyboard */,
+				84ABFBAD1ECDB115000E86DF /* Controller */,
+				84ABFBAE1ECDB13F000E86DF /* Support */,
 				84ABFBA21ECDB0EE000E86DF /* Assets.xcassets */,
 				84ABFBA41ECDB0EE000E86DF /* LaunchScreen.storyboard */,
 				84ABFBA71ECDB0EE000E86DF /* Info.plist */,
 			);
 			path = GuideToUsingJSONData;
+			sourceTree = "<group>";
+		};
+		84ABFBAD1ECDB115000E86DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84ABFB9D1ECDB0EE000E86DF /* StartVC.swift */,
+				84ABFBB01ECDB165000E86DF /* NetworkModel.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84ABFBAE1ECDB13F000E86DF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				84ABFB9B1ECDB0EE000E86DF /* AppDelegate.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84ABFB9E1ECDB0EE000E86DF /* ViewController.swift in Sources */,
+				84ABFBB11ECDB165000E86DF /* NetworkModel.swift in Sources */,
+				84ABFB9E1ECDB0EE000E86DF /* StartVC.swift in Sources */,
 				84ABFB9C1ECDB0EE000E86DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
